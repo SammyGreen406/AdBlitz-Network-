@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdBlitz Network</title>
+    <!-- Google AdSense Script - Replace ca-pub-XXXX with your actual client ID -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXX"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298); /* Soft gradient trend */
+            color: #fff;
+            line-height: 1.6;
+        }
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 1200px;
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent for depth */
+            border-radius: 20px; /* Organic rounded shapes */
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Subtle shadows */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.3);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #ffd700; /* Vibrant gold for headlines */
+            margin-bottom: 20px;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Depth in text */
+        }
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            border: none;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: rgba(255, 255, 255, 0.05);
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+        li:hover {
+            background: rgba(255, 255, 255, 0.15);
+        }
+        a {
+            color: #00bfff; /* Bright cyan for links */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #admin-login {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+            display: none;
+            z-index: 1000;
+            color: #333;
+        }
+        #admin-login input, #admin-login button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        #admin-login button {
+            background: #1e3c72;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        #admin-login button:hover {
+            background: #2a5298;
+        }
+        #wallet {
+            display: none;
+            margin-top: 20px;
+        }
+        /* Responsive grid for sections */
+        @media (min-width: 768px) {
+            body {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+            }
+            section {
+                margin: 20px;
+            }
+        }
+        /* Ad styling to blend in */
+        .adsbygoogle {
+            margin: 20px auto;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Press Ctrl + Shift + L to show login, for simplicity -->
+    <section id="banner">
+        <h1>Welcome to AdBlitz Network - Your Global Ad and Trend Hub!</h1>
+    </section>
+
+    <section id="youtube-short">
+        <h2>Short YouTube Video</h2>
+        <div id="youtube-short-player"></div>
+        <!-- Example AdSense Ad Unit -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXX"
+             data-ad-slot="1234567890"
+             data-ad-format="auto"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </section>
+
+    <section id="facebook-ads">
+        <h2>Facebook Ads</h2>
+        <div id="facebook-ads-player"></div>
+    </section>
+
+    <section id="tiktok-video">
+        <h2>TikTok Video</h2>
+        <div id="tiktok-video-player"></div>
+    </section>
+
+    <section id="instagram-video">
+        <h2>Instagram Video</h2>
+        <div id="instagram-video-player"></div>
+    </section>
+
+    <section id="x-video">
+        <h2>X Video</h2>
+        <div id="x-timeline"></div>
+    </section>
+
+    <section id="soccer-highlights">
+        <h2>Soccer Matches Highlights</h2>
+        <div id="soccer-player"></div>
+        <!-- Example AdSense Ad Unit -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXX"
+             data-ad-slot="0987654321"
+             data-ad-format="auto"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </section>
+
+    <section id="boxing-highlights">
+        <h2>Boxing Bout Highlights</h2>
+        <div id="boxing-player"></div>
+    </section>
+
+    <section id="ufc-highlights">
+        <h2>UFC Fight Highlights</h2>
+        <div id="ufc-player"></div>
+    </section>
+
+    <section id="trending-news">
+        <h2>Trending News</h2>
+        <ul id="trending-news-list"></ul>
+    </section>
+
+    <section id="blockchain-ai-news">
+        <h2>Blockchain and AI News</h2>
+        <ul id="blockchain-ai-list"></ul>
+    </section>
+
+    <section id="new-technologies">
+        <h2>New Technologies</h2>
+        <ul id="new-tech-list"></ul>
+    </section>
+
+    <section id="entertainment-news">
+        <h2>Entertainment Trending News</h2>
+        <ul id="entertainment-list"></ul>
+        <!-- Example AdSense Ad Unit -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-XXXX"
+             data-ad-slot="1122334455"
+             data-ad-format="auto"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </section>
+
+    <div id="admin-login">
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+        <div id="wallet" >
+            <p>Ad Revenue Wallet: <span id="revenue">$0.00</span></p>
+            <p>USDT TRC20 Address: YOUR_USDT_TRC20_ADDRESS_HERE</p>
+            <button onclick="withdraw()">Withdraw</button>
+        </div>
+    </div>
+
+    <script>
+        // Show login on Ctrl + Shift + L
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey && e.shiftKey && e.key === 'L') {
+                document.getElementById('admin-login').style.display = 'block';
+            }
+        });
+
+        document.getElementById('login-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+            if (user === 'SammyGreen' && pass === 'SammyGreen') {
+                document.getElementById('wallet').style.display = 'block';
+            } else {
+                alert('Invalid credentials');
+            }
+        });
+
+        function withdraw() {
+            alert('Withdrawal initiated to USDT TRC20 wallet.');
+            // In real, integrate with payment API
+        }
+
+        // Placeholders for API keys - Replace with your own
+        const ytApiKey = 'AIzaSyADdA1unn5Mm-2jAGN6qHZTRH_U3OB3i-I';
+        const newsApiKey = 'ygotzRLJtY2e1VrDZxduxBDcB0jhl32j6nIGz199';
+
+        // Get country
+        let countryCode = 'US'; // default
+        fetch('https://ip-api.com/json/')
+            .then(res => res.json())
+            .then(data => {
+                countryCode = data.countryCode;
+                loadContent();
+            })
+            .catch(() => loadContent());
+
+        function loadContent() {
+            // Load YouTube Short
+            fetch(`https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&videoDuration=short&maxResults=1&regionCode=\( {countryCode}&key= \){ytApiKey}`)
+                .then(res => res.json())
+                .then(data => {
+                    if (data.items && data.items.length > 0) {
+                        const videoId = data.items[0].id;
+                        document.getElementById('youtube-short-player').innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>`;
+                    }
+                });
+
+            // Facebook Ads - using YouTube search for example ads
+            loadYouTubeVideo('facebook ads examples', 'facebook-ads-player');
+
+            // TikTok - using YouTube
+            loadYouTubeVideo('viral tiktok videos', 'tiktok-video-player');
+
+            // Instagram - using YouTube
+            loadYouTubeVideo('viral instagram reels', 'instagram-video-player');
+
+            // X video - embed timeline
+            const xQuery = encodeURIComponent(`videos lang:en geocode:${countryCode}`); // approximate
+            const timeline = document.createElement('a');
+            timeline.className = 'twitter-timeline';
+            timeline.href = `https://twitter.com/search?q=${xQuery}`;
+            timeline.textContent = 'Tweets with videos';
+            document.getElementById('x-timeline').appendChild(timeline);
+            // Load widgets
+            const script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://platform.twitter.com/widgets.js';
+            document.body.appendChild(script);
+
+            // Soccer - use Scorebat if possible, else YouTube
+            loadYouTubeVideo('soccer match highlights latest', 'soccer-player', 'date');
+
+            // Boxing
+            loadYouTubeVideo('boxing bout highlights latest', 'boxing-player', 'date');
+
+            // UFC
+            loadYouTubeVideo('ufc fight highlights latest', 'ufc-player', 'date');
+
+            // News
+            loadNews(`https://api.thenewsapi.com/v1/news/top?locale=\( {countryCode.toLowerCase()}&limit=5&api_token= \){newsApiKey}`, 'trending-news-list');
+
+            // Blockchain AI
+            loadNews(`https://api.thenewsapi.com/v1/news/all?search=blockchain+OR+ai&locale=\( {countryCode.toLowerCase()}&limit=5&api_token= \){newsApiKey}`, 'blockchain-ai-list');
+
+            // New Tech
+            loadNews(`https://api.thenewsapi.com/v1/news/top?categories=technology&locale=\( {countryCode.toLowerCase()}&limit=5&api_token= \){newsApiKey}`, 'new-tech-list');
+
+            // Entertainment
+            loadNews(`https://api.thenewsapi.com/v1/news/top?categories=entertainment&locale=\( {countryCode.toLowerCase()}&limit=5&api_token= \){newsApiKey}`, 'entertainment-list');
+        }
+
+        function loadYouTubeVideo(query, elementId, order = 'relevance') {
+            fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=\( {encodeURIComponent(query)}&type=video&maxResults=1&regionCode= \){countryCode}&order=\( {order}&key= \){ytApiKey}`)
+                .then(res => res.json())
+                .then(data => {
+                    if (data.items && data.items.length > 0) {
+                        const videoId = data.items[0].id.videoId;
+                        document.getElementById(elementId).innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>`;
+                    }
+                });
+        }
+
+        function loadNews(url, elementId) {
+            fetch(url)
+                .then(res => res.json())
+                .then(data => {
+                    const list = document.getElementById(elementId);
+                    data.data.forEach(item => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `<a href="\( {item.url}" target="_blank"> \){item.title}</a> - ${item.published_at}`;
+                        list.appendChild(li);
+                    });
+                });
+        }
+    </script>
+</body>
+</html>
